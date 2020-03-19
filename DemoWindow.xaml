@@ -1,0 +1,13 @@
+﻿<Window x:Class="Skinning.DemoWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="View Demo" Height="300" Width="300">
+    <DockPanel DataContext="{Binding Source={StaticResource XMLDataDataSource}}">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="List View" Click="OnListViewClick"/>
+            <MenuItem Header="Group View" Click="OnGroupViewClick"/>
+            <MenuItem Header="Tree View" Click="OnTreeViewClick"/>
+        </Menu>
+        <ContentPresenter Content="{Binding}" ContentTemplate="{DynamicResource EarthDataTemplate}"/>
+    </DockPanel>
+</Window>

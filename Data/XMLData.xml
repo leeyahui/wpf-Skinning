@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<earth>
+  <country name="US">
+    <family name="Bill's">
+      <member name="Bill"/>
+      <member name="Mark"/>
+    </family>
+    <family name="Hugo's">
+      <member name="Hugo"/>
+      <member name="Sherry"/>
+    </family>
+    <family name="Li's">
+      <member name="Li"/>
+      <member name="Jay"/>
+    </family>
+  </country>
+  <country name="China">
+    <family name="陆家">
+      <member name="嘴"/>
+      <member name="脸"/>
+    </family>
+    <family name="徐家">
+      <member name="汇"/>
+      <member name="仁"/>
+    </family>
+    <family name="黄浦">
+      <member name="江"/>
+      <member name="边"/>
+    </family>
+  </country>
+</earth>
+

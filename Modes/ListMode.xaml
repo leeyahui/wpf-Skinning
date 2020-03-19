@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DataTemplate x:Key="NameTemplate">
+        <TextBlock Text="{Binding XPath=@name}"/>
+    </DataTemplate>
+    <DataTemplate x:Key="EarthDataTemplate">
+        <UniformGrid Rows="1" DataContext="{Binding XPath=earth/country}">
+            <ListBox ItemsSource="{Binding Mode=Default}" x:Name="countryList" ItemTemplate="{StaticResource NameTemplate}"/>
+            <ListBox DataContext="{Binding SelectedItem, ElementName=countryList}"
+                     ItemsSource="{Binding Mode=OneWay, XPath=family}"
+                     x:Name="familyList" ItemTemplate="{StaticResource NameTemplate}"/>
+            <ListBox DataContext="{Binding SelectedItem, ElementName=familyList}"
+                     ItemsSource="{Binding Mode=OneWay, XPath=member}"
+                     ItemTemplate="{StaticResource NameTemplate}"/>
+        </UniformGrid>
+    </DataTemplate>
+</ResourceDictionary>
