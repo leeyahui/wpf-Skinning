@@ -93,6 +93,10 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Theme\ITheme.cs" />
+    <Compile Include="Theme\ResourceDictionaryExtensions.cs" />
+    <Compile Include="Theme\Theme.cs" />
+    <Compile Include="Theme\ThemeHelper.cs" />
     <Compile Include="Util\ResourceHelper.cs" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
